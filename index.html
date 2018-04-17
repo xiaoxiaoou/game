@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        body{
+            height: 100%;
+            background: url(img/bg.jpg) no-repeat 0 0;
+            background-size:cover;
+        }
+        table{
+            margin:50px auto;
+            background: rgba(0, 0, 0,0.5);
+        }
+        table,tr,td{
+            border: 1px solid #000;
+            border-collapse:collapse;
+        }
+        td{
+            width: 20px;
+            height: 20px;
+        }
+        .L{ background: linear-gradient(to right bottom, #800080, #ffc0cb); }
+        .I{ background: linear-gradient(to right bottom, #00f260, #0575e6); }
+        .S{ background: linear-gradient(to right bottom, #fc4a1a, #f7b733);}
+        .Z{ background: linear-gradient(to right bottom, #22c1c3, #fdbb2d);}
+        .J{ background: linear-gradient(to right bottom, #ff9966, #ff5e62);}
+        .O{ background: linear-gradient(to right bottom, #7f00ff, #e100ff);}
+        .T{ background: linear-gradient(to right bottom, #c0392b, #8e44ad);}
+        .B{ background:yellow; }
+        .A{ background:yellowgreen; }
+        h1,h2{color:#fff;text-align:center;}
+    </style>
+</head>
+<body>
+    <audio src="audio/bg.wav" autoplay id="bg"></audio>
+    <audio src="audio/一键到底.wav" id="goDown"></audio>
+    <audio src="audio/旋转.wav" id="rotate"></audio>
+    <audio src="audio/移动.wav" id="move"></audio>
+    <audio src="audio/消行.wav" id="goDie"></audio>
+    <h1 id="score"></h1>
+    <h2 id="info"></h2>
+    <div id="app">
+
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/Block_json.js"></script>
+<script type="text/javascript" src="js/Game.js"></script>
+<script type="text/javascript" src="js/Block.js"></script>
+<script type="text/javascript" src="js/Map.js"></script>
+<script type="text/javascript">
+     document.getElementById("bg").volume = 0.2;
+     var game = new Game();
+</script>
