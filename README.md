@@ -1,3 +1,5 @@
+### 项目效果预览
+![](https://github.com/xiaoxiaoou/game/blob/master/123.gif)
 
 ### 第一步：构思 俄罗斯方块 的形状和规则
 * 形状<br/>
